@@ -1,7 +1,7 @@
 ---
-title: "Garrett's gonna explode"
+title: "About Garrett"
 ---
-
+<img align="right" src="images/photos/profile_picture.jpeg" width = "450" HSPACE = "50">
 Hi, my name is Garrett Stanford. I am a Oregon native.
 
 
