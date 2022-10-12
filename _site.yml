@@ -1,9 +1,10 @@
-name: "Garrett's-website"
+name: "Garrett-Stanford"
+output_dir: "."
 navbar:
   title: "G's website"
 left:
   - text: "Home"
-href: index.html
+    href: index.html
 right: 
   - icon: fa-envelope fa-lg
 href: mailto:<gos@uoregon.edu>
