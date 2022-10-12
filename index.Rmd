@@ -1,9 +1,10 @@
 ---
 title: "Garrett's gonna explode"
+output: pdf_document
 ---
 
 ## Welcome
 
 Let's get weird
 
-<img src="main results.png" style="width:50%>
+<img src="main results.png" width = "450">
