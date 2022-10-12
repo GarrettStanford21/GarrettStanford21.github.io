@@ -1,0 +1,7 @@
+---
+title: "Research"
+---
+
+Here is some research 
+
+<img src="images/figures/main results.png" width = "450">

@@ -1,14 +1,17 @@
 name: "Garrett-Stanford"
 navbar:
-  title: "G's website"
-left:
-  - text: "Home"
+  title: "Home"
+  left:
+  - text: "Bio"
     href: index.html
-right: 
-  - icon: fa-envelope-o fa-lg
+  - text: "Research"
+    href: research.html
+  - text: "CV"
+    href: cv.html
+  right: 
+  - icon: fa-envelope fa-lg
     href: mailto:gos@uoregon.edu
-- icon: fa-github fa-lg
-  href: https://github.com/GarrettStanford21
+  - icon: fa-github fa-lg
+    href: https://github.com/GarrettStanford21
 output:
-- html_document:
-theme: darkly 
+  html_document:
