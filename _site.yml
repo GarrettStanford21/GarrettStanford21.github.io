@@ -1,15 +1,14 @@
 name: "Garrett-Stanford"
-output_dir: "."
 navbar:
   title: "G's website"
 left:
   - text: "Home"
     href: index.html
 right: 
-  - icon: fa-envelope fa-lg
-    href: mailto:<gos@uoregon.edu>
-  - icon: fa-github fa-lg
-    href: http://github.com/<GarrettStanford21>/
-  output:
-  html_document:
-  theme: darkly
+  - icon: fa-envelope-o fa-lg
+    href: mailto:gos@uoregon.edu
+- icon: fa-github fa-lg
+  href: https://github.com/GarrettStanford21
+output:
+- html_document:
+theme: darkly 

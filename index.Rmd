@@ -1,6 +1,5 @@
 ---
 title: "Garrett's gonna explode"
-output: pdf_document
 ---
 
 ## Welcome
@@ -8,3 +7,4 @@ output: pdf_document
 Let's get weird
 
 <img src="main results.png" width = "450">
+
