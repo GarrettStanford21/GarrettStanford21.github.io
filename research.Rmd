@@ -1,16 +1,25 @@
 ---
 title: "Research"
 ---
+<br>
 
 # Working Papers
 
-## ["“I’d like to make a complaint against an officer”:// Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender](papers/draft_officer_complaint_audit.pdf)
+<br>
 
-## [Public preferences for a state-level carbon cap-and-trade program](papers/draft_carbon_cap_and_trade.pdf) with [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/)
-
-
-
+### ["I’d like to make a complaint against an officer”: Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender](papers/draft_officer_complaint_audit.pdf)
+<br>
 
 <img src="images/figures/main results.png" width = "450">
+<br>
+
+<br>
+
+### [Public preferences for a state-level carbon cap-and-trade program](papers/draft_carbon_cap_and_trade.pdf) with [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/)
+
+
+
+
+
 
 
