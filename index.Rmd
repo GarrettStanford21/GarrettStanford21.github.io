@@ -1,8 +1,26 @@
 ---
-title: "Home"
+title: ""
 ---
+
 <img align="right" src="images/photos/profile_picture.jpeg" width = "450" HSPACE = "50">
-Hi, my name is Garrett Stanford.
+
+### Welcome to my internet home
+
+Call me [Garrett](bio.Rmd). I am a Ph.D. candidate in the Department of Economics at the University of Oregon. 
+
+<br>
+
+### Research
+My dissertation explores climate change policy and criminal justice. 
+I believe that descriptive work is valuable. I believe we are having a reproduction issue. I believe the best research is inter-disciplinary.
+
+My philosophy is to use economics to make the world a better place.
+
+<br>
+
+### Contact me 
+
+Please get in touch if you want to chat about my work, offer me a job, or share intel on high-quality low-traffic backpacking trails!
 
 
 
