@@ -2,6 +2,15 @@
 title: "Research"
 ---
 
-Here is some research 
+# Working Papers
+
+## ["“I’d like to make a complaint against an officer”:// Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender](papers/draft_officer_complaint_audit.pdf)
+
+## [Public preferences for a state-level carbon cap-and-trade program](papers/draft_carbon_cap_and_trade.pdf) with [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/)
+
+
+
 
 <img src="images/figures/main results.png" width = "450">
+
+
