@@ -1,11 +1,14 @@
 ---
-title: "CV"
+title: "CV: Garrett Olson Stanford"
 ---
 
+[PDF]()
+<br><br>
+
 ## Education
-#### <br> Ph.D., Economics, University of Oregon, Expected June 2023
-<br> Fields: Envrionmental Economics, Experimental Ecnomics, Criminal Justice
-<br>
+#### <br> Ph.D. Economics, University of Oregon, Expected June 2023
+<br> _Fields:_ Envrionmental Economics, Experimental Ecnomics, Criminal Justice
+<br> _Committee:_ [Edward A. Rubin](edrub.in), [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/), [Jonathna M.V. Davis](https://sites.google.com/site/jonathanmvdavis/)
  
 #### <br>  M.S. Economics, University of Oregon, 2018
 <br> 
