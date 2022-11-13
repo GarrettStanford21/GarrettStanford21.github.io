@@ -22,7 +22,7 @@ M.S. Economics, University of Oregon, 2018
 
 ### Working Papers: 
 
-[Police are less likely to respond to requests for help from minorities: Field experiment evidence of police discrimination](papers/draft_officer_complaint_audit.pdf)
+[Police are less likely to respond to requests for help from minorities: Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender](papers/draft_officer_complaint_audit.pdf)
 <br> Garrett Stanford
 <br>
 

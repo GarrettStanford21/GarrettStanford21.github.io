@@ -3,7 +3,7 @@ title: "Research"
 ---
 <br>
 
-I am an applied microeconomist motivated by social justice. I focus on questions concerning environmental, climate, and criminal justice. However, I am also interested in projects concerning houselessness, gun control, and the intersection of machine learning and racial equity. 
+I use an equity and justice framework to explore issues concerning environmental, climate, and criminal justice. However, I am also interested in projects concerning houselessness, gun control, and the intersection of machine learning and racial equity. 
 <br>
 
 # Working Papers
