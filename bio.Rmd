@@ -2,7 +2,7 @@
 title: "A short introduction"
 ---
 
-<img class= "margin" align="right" src="images/photos/japan_out the window.jpeg" width = "450" HSPACE = "50">
+<img class= "margin" align="right" src="images/photos/japan_out the window.jpeg" width = "450">
 
 <br>
 
