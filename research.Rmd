@@ -3,11 +3,15 @@ title: "Research"
 ---
 <br>
 
+I am an applied microeconomist motivated by social justice. I focus on questions concerning environmental, climate, and criminal justice. However, I am also interested in projects concerning houselessness, gun control, and the intersection of machine learning and racial equity. 
+<br>
+
 # Working Papers
 
 <br>
 
-### ["I’d like to make a complaint against an officer”: Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender](papers/draft_officer_complaint_audit.pdf)
+[Police are less likely to respond to requests for help from minorities: Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender](papers/draft_officer_complaint_audit.pdf)
+<br> *Garrett Stanford*
 <br>
 
 <img src="images/figures/main results.png" width = "450">
@@ -15,7 +19,14 @@ title: "Research"
 
 <br>
 
-### [Public preferences for a state-level carbon cap-and-trade program](papers/draft_carbon_cap_and_trade.pdf) with [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/)
+[Public preferences for a state-level carbon cap-and-trade program](papers/draft_carbon_cap_and_trade.pdf) 
+<br> *Garrett Stanford and Trudy Ann Cameron*
+
+
+
+<br>
+
+# Research in Progress
 
 
 

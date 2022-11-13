@@ -2,35 +2,90 @@
 title: "CV: Garrett Olson Stanford"
 ---
 
-[PDF]()
+[PDF](cv/CV-11-12.pdf)
 <br><br>
 
-## Education
-#### <br> Ph.D. Economics, University of Oregon, Expected June 2023
-<br> _Fields:_ Envrionmental Economics, Experimental Ecnomics, Criminal Justice
-<br> _Committee:_ [Edward A. Rubin](edrub.in), [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/), [Jonathna M.V. Davis](https://sites.google.com/site/jonathanmvdavis/)
- 
-#### <br>  M.S. Economics, University of Oregon, 2018
-<br> 
+## <u>Education</u>
+**Ph.D. Economics, University of Oregon, Expected June 2023**
 
-#### <br> B.S. Economics, University of Puget Sound, 2014
-#### <br> B.A. Japanese, University of Puget Sound, 2014
+- *Fields:* Envrionmental Economics, Experimental Economics, Economics of Crime and Policing
+- *Committee:* [Edward A. Rubin](https://edrub.in/), [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/), [Jonathan M.V. Davis](https://sites.google.com/site/jonathanmvdavis/)
+
+M.S. Economics, University of Oregon, 2018
+<br> B.S. Economics, University of Puget Sound, 2014
+<br> B.A. Japanese, University of Puget Sound, 2014
+<br><br>
+
+
+## <u>Research</u>
 <br>
 
-## Research
 ### Working Papers: 
 
+[Police are less likely to respond to requests for help from minorities: Field experiment evidence of police discrimination](papers/draft_officer_complaint_audit.pdf)
+<br> Garrett Stanford
+<br>
 
-### Works in progress:
+[Public preferences for a state-level carbon cap-and-trade program](papers/draft_carbon_cap_and_trade.pdf)
+<br> Garrett Stanford and Trudy Ann Cameron
 
+<br>
 
+### Research in progress:
 
-## Teaching Experience
+**Asset Forfeitures and Traffic Fines: Substitutes or Complements?**
+<br> Garrett Stanford
+
+**Distributional Impacts of Gun-control Laws**
+<br> Tami Ren and Garrett Stanford
+
+<br><br>
+
+## <u>Teaching Experience</u>
+<br>
 
 ### Sole Instructor
+[EC 201: Introduction to Microeconomics:](teaching/201_syllabus.pdf) _Fall 2020, Winter 2022, Summer 2022_
+
+[EC 333: Natural Resources & Environmental Issues:](teaching/333_syllabus.pdf) _Summer 2021, Spring 2022_
+
+<br>
+
+### Teaching Assistant
 
 
+#### **Graduate Level:**
+- **EC 510: Big Data in Economics:** _Spring 2020, Spring 2021_
+- **EC 525: Advanced Econometrics:** _Spring 2020_
+- **EC 535: Natural Resource Economics:** _Spring 2019_
+- **EC 551: Labor Econ Issues** _Spring 2020_
+<br>
 
-## Honors and Awards
+#### **Undergraduate Level:**	      
+- **EC 419: Analysis of Community Issues:** _Spring 2021_
+- **EC 421: Introduction to Econometrics:** _Winter 2020_
+- **EC 333: Natural Resources & Environmental Issues:** _Fall 2022_
+- **EC 201: Introduction to Microeconomics:** _Spring 2019, Fall 2019_
+- **EC 202: Introduction to Macroeconomics:** _Winter 2019, Winter 2021_
+- **EC 311: Intermediate Microeconomics:** _Fall 2019, Fall 2022_
+- **EC 101: Introduction to Economics:** _Fall 2018_
+<br><br>
 
-## Conference and Seminar Presentations 
+
+## <u>Conference and Seminar Presentations</u> 
+
+ Western Economic Association International (WEAI) Annual Conference *(2022)*
+<br> Association of Environmental and Resources Economists (AERE) Annual Summer Conference *(2022)*
+<br> Society for Benefit Cost Analysis (SBCA) Annual Conference _(2022)_
+<br> University of Oregon Microeconomics group _(2021, 2022)_
+<br> Berkeley/Sloan Summer School in Environmental and Energy Economics _(2020)_
+<br>JET Skills and Development Conference _(2016)_
+<br> European Writing Center Association Conference _(2014)_
+<br><br>
+
+## <u>Honors and Awards</u> 
+Graduate Teaching Fellowship _2018 - present_
+<br> Edward G. Daniel Scholarship _2019_
+<br> Robert G. Albertson Award _2014_
+<br>	Phi Beta Kappa Honor Society _2014_
+	
