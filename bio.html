@@ -13,7 +13,8 @@
 
 <title>A short introduction</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -58,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="website_style.css" type="text/css" />
 
 
@@ -82,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -288,11 +290,27 @@ $(document).ready(function () {
 <p><img class= "margin" align="right" src="images/photos/tom.jpeg" width = "450" HSPACE = "50"></p>
 <p><br></p>
 <p><img class= "margin" align="right" src="images/photos/hiking.jpeg" width = "450" HSPACE = "50"></p>
-<p>I am an Oregon native and grew up in Portland. I received my undergraduate degree from the <a href="https://www.pugetsound.edu/">University of Puget Sound</a> in Tacoma, WA. At Puget Sound, I was halfway through a degree in English before making a <em>hard</em> pivot toward degrees in economics and Japanese.</p>
+<p>I was born and raised in Portland. I received my undergraduate degree
+from the <a href="https://www.pugetsound.edu/">University of Puget
+Sound</a> in Tacoma, WA. At Puget Sound, I was halfway through a degree
+in English before making a <em>hard</em> pivot toward degrees in
+economics and Japanese.</p>
 <p><br></p>
-<p>After graduating from the University of Puget Sound, I moved to <a href="https://earth.google.com/web/data=MkEKPwo9CiExVEc3VDhRYzFOdnBzamdXQXJ2a0s2eFRGWTFkNm1JWlgSFgoUMDBDOUJCMzk0NzI1MTNBRTQwNkEgAQ">湯前町 (Yunomae), Japan</a> for a couple years to teach English. In Japan, I spent my time studying the language, riding trains, and learning to cohabitate with the biggest spiders I have ever seen.</p>
+<p>After graduating from the University of Puget Sound, I moved to <a
+href="https://earth.google.com/web/data=MkEKPwo9CiExVEc3VDhRYzFOdnBzamdXQXJ2a0s2eFRGWTFkNm1JWlgSFgoUMDBDOUJCMzk0NzI1MTNBRTQwNkEgAQ">湯前町
+(Yunomae), Japan</a> for a couple years to teach English. In Japan, I
+spent my time studying the language, riding trains, and searching for
+hidden swimming holes.</p>
 <p><br></p>
-<p>I returned to Oregon in 2017 to start a Ph.D. in economics at the University of Oregon in Eugene. In Eugene, I live with my partner (not featured) and my turtle (featured). When I am not working on my degree, I am playing, discussing, or contemplating basketball. I also fancy myself an outdoor enthusiast, which is a big reason I keep ending up back in Oregon.</p>
+<p>I returned to Oregon in 2017 to start a Ph.D. in economics at the
+University of Oregon in Eugene. After completing my degree in June of
+2023, I packed up my house and drove to Athens, Georgia.</p>
+<p><br></p>
+<p>In Athens, I work as a postdoc in the University of Georgia’s
+Department of Agriculture &amp; Applied Economics (it’s a mouthful). I
+live with my partner (not featured) and my turtle (featured). In my free
+time, I am an amateur etymologist, basketball enthusiast, and AC
+czar.</p>
 
 
 

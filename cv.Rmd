@@ -2,18 +2,22 @@
 title: "CV: Garrett Olson Stanford"
 ---
 
-[PDF](cv/CV-11-12.pdf)
+[PDF](cv/CV-8-10-23.pdf)
 <br><br>
 
-## <u>Education</u>
-**Ph.D. Economics, University of Oregon, Expected June 2023**
+## <u>Academic Positions</u>
 
-- *Fields:* Envrionmental Economics, Experimental Economics, Economics of Crime and Policing
+Postodoctoral Associate, University of Georgia, 2023--present
+
+## <u>Education</u>
+B.A. Japanese, University of Puget Sound, 2014
+<br> B.S. Economics, University of Puget Sound, 2014
+<br> M.S. Economics, University of Oregon, 2018
+<br> Ph.D. Economics, University of Oregon, 2023
+
+- *Fields:* Public Economics, Environmental Economics, Experimental Economics, Economics of Crime and Policing
 - *Committee:* [Edward A. Rubin](https://edrub.in/), [Trudy Ann Cameron](https://pages.uoregon.edu/cameron/vita/), [Jonathan M.V. Davis](https://sites.google.com/site/jonathanmvdavis/)
 
-M.S. Economics, University of Oregon, 2018
-<br> B.S. Economics, University of Puget Sound, 2014
-<br> B.A. Japanese, University of Puget Sound, 2014
 <br><br>
 
 
@@ -22,22 +26,33 @@ M.S. Economics, University of Oregon, 2018
 
 ### Working Papers: 
 
-[Police are less likely to respond to requests for help from minorities: Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender](papers/draft_officer_complaint_audit.pdf)
-<br> Garrett Stanford
+[Police are less likely to respond to requests for help from minorities: Field experiment evidence of police discrimination](papers/Stanford_police_1-25-23.pdf)
+
+
 <br>
 
-[Public preferences for a state-level carbon cap-and-trade program](papers/draft_carbon_cap_and_trade.pdf)
-<br> Garrett Stanford and Trudy Ann Cameron
+[Public preferences for a state-level carbon cap-and-trade program](papers/Stanford_Cameron_8-9-23.pdf) 
+<br> with Trudy Ann Cameron
+
+
+
+<br>
+
+[Gun control and the steel paradox](papers/OreGUNians_8-9-23)
+<br> with Katie Bollman, Benjamin Hansen and Edward Rubin
 
 <br>
 
 ### Research in progress:
 
 **Asset Forfeitures and Traffic Fines: Substitutes or Complements?**
-<br> Garrett Stanford
+
 
 **Distributional Impacts of Gun-control Laws**
-<br> Tami Ren and Garrett Stanford
+<br> with Tami Ren
+
+**Using Machine Learning to Explore Racist Stereotypes**
+<br> with Edward Rubin
 
 <br><br>
 
@@ -64,10 +79,10 @@ M.S. Economics, University of Oregon, 2018
 #### **Undergraduate Level:**	      
 - **EC 419: Analysis of Community Issues:** _Spring 2021_
 - **EC 421: Introduction to Econometrics:** _Winter 2020_
-- **EC 333: Natural Resources & Environmental Issues:** _Fall 2022_
+- **EC 333: Natural Resources & Environmental Issues:** _Fall 2022, Spring 2023_
 - **EC 201: Introduction to Microeconomics:** _Spring 2019, Fall 2019_
 - **EC 202: Introduction to Macroeconomics:** _Winter 2019, Winter 2021_
-- **EC 311: Intermediate Microeconomics:** _Fall 2019, Fall 2022_
+- **EC 311: Intermediate Microeconomics:** _Fall 2019, Fall 2022, Spring 2023_
 - **EC 101: Introduction to Economics:** _Fall 2018_
 <br><br>
 
@@ -84,7 +99,7 @@ M.S. Economics, University of Oregon, 2018
 <br><br>
 
 ## <u>Honors and Awards</u> 
-Graduate Teaching Fellowship _2018 - present_
+Graduate Teaching Fellowship _2018 - 2023_
 <br> Edward G. Daniel Scholarship _2019_
 <br> Robert G. Albertson Award _2014_
 <br>	Phi Beta Kappa Honor Society _2014_

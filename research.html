@@ -13,7 +13,8 @@
 
 <title>Research</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -58,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="website_style.css" type="text/css" />
 
 
@@ -82,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -283,25 +285,64 @@ $(document).ready(function () {
 </div>
 
 
-<p>I use an equity and justice framework to explore issues concerning environmental, climate, and criminal justice. However, I am also interested in projects concerning houselessness, gun control, and the intersection of machine learning and racial equity. <br> <br></p>
+<p>My research focuses on environmental economics and the economics of
+criminal justice. More broadly, I research the provision of public goods
+for a diverse public, and the consequences that can arise. Much of my
+work uses an equity framework to explore the distributional impact of
+public goods and policies. <br></p>
+<p>I believe that descriptive work is valuable. I believe we are having
+a replication crisis. And I believe the best research comes from
+inter-disciplinary collaboration. <br> <br></p>
 <div id="working-papers" class="section level1">
 <h1>Working Papers</h1>
-<p><br> <img src="images/figures/point_est_2.png" width = "1000"> <br></p>
-<p><a href="papers/Stanford_2022_JMP.pdf">Police are less likely to respond to requests for help from minorities: Field experiment evidence of police discrimination based on citizen race, ethnicity, and gender</a> <br> <em>Garrett Stanford</em> <br></p>
+<p><br> <img src="images/figures/point_est_2.png" width = "1000">
+<br></p>
+<p><a href="papers/Stanford_police_1-25-23.pdf">Police are less likely
+to respond to requests for help from minorities: Field experiment
+evidence of police discrimination</a> <br></p>
 <p><br></p>
-<p><a href="papers/Stanford_Cameron_2022.pdf">Public preferences for a state-level carbon cap-and-trade program</a> <br> <em>Garrett Stanford and Trudy Ann Cameron</em></p>
+<p><a href="papers/Stanford_Cameron_8-9-23.pdf">Public preferences for a
+state-level carbon cap-and-trade program</a> <br> <em>with Trudy Ann
+Cameron</em></p>
 <p><br></p>
+<p><a href="papers/OreGUNians_8-9-23">Gun control and the steel
+paradox</a> <br> <em>with Katie Bollman, Benjamin Hansen and Edward
+Rubin</em></p>
 </div>
 <div id="research-in-progress" class="section level1">
 <h1>Research in Progress</h1>
-<p><strong>Asset Forfeitures and Traffic Fines: Substitutes or Complements?</strong> <br> <em>Garrett Stanford</em> <br></p>
-<p>Financial incentives can influence policing. Both through “taxation by citation” and through asset forfeiture, police departments generate revenue through policing practices. While both of these revenue sources are common in many police departments, little is known about how they affect policing behaviors—or how they interact. Using several rich datasets on policing and municipal budgets, I measure the elasticity of substitution between traffic citations and asset forfeiture at the department level. The findings have important implications for policy makers, social activists, and researchers.</p>
+<p><strong>Asset Forfeitures and Traffic Fines: Substitutes or
+Complements?</strong> <br> <br></p>
+<p>Financial incentives can influence policing. Both through “taxation
+by citation” and through asset forfeiture, police departments generate
+revenue through policing practices. While both of these revenue sources
+are common in many police departments, little is known about how they
+affect policing behaviors—or how they interact. Using several rich
+datasets on policing and municipal budgets, I measure the elasticity of
+substitution between traffic citations and asset forfeiture at the
+department level. The findings have important implications for policy
+makers, social activists, and researchers.</p>
 <p><br></p>
-<p><strong>Distributional Effects of Gun Control Laws</strong> <br> <em>Tami Ren and Garrett Stanford</em> <br></p>
-<p>In November, Oregon narrowly passed a measure that restricts the possession of firearms, reflecting a national push for stricter gun control. The new law charges the Oregon State Police (OSP) with issuing permits to lawfully own a firearm, and allows the OSP discretion when deciding to issue a permit. While proponents of the law have lauded the discretionary power, opponents are concerned that designating an institution that potentially struggles with biased practices as an important gatekeeper could have unintended impacts. We use a field experiment to test for the presence of racial discrimination concerning firearm ownership.</p>
+<p><strong>Distributional Effects of Gun Control Laws</strong> <br>
+<em>with Tami Ren</em> <br></p>
+<p>In November, Oregon narrowly passed a measure that restricts the
+possession of firearms, reflecting a national push for stricter gun
+control. The new law charges the Oregon State Police (OSP) with issuing
+permits to lawfully own a firearm, and allows the OSP discretion when
+deciding to issue a permit. While proponents of the law have lauded the
+discretionary power, opponents are concerned that designating an
+institution that potentially struggles with biased practices as an
+important gatekeeper could have unintended impacts. We use a field
+experiment to test for the presence of racial discrimination concerning
+firearm ownership.</p>
 <p><br></p>
-<p><strong>Using Machine Learning to Explore Racist Stereotypes</strong> <br> <em>Ed Rubin and Garrett Stanford</em> <br></p>
-<p>Recent advances in machine learning have created opportunities for new and compelling research. We use the AI programs GPT-3 and Dall_e to explore the prevalence of racial stereotypes in machine learning programs. We then explore the implications of these results for researchers and policymakers.</p>
+<p><strong>Using Machine Learning to Explore Racist Stereotypes</strong>
+<br> <em>with Ed Rubin</em> <br></p>
+<p>Recent advances in machine learning have created opportunities for
+new and compelling research. We use the AI programs GPT-3 and Dall_e to
+explore the prevalence of racial stereotypes in machine learning
+programs. We then explore the implications of these results for
+researchers and policymakers.</p>
 </div>
 
 

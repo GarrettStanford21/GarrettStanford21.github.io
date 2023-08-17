@@ -13,7 +13,8 @@
 
 <title>index.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -58,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="website_style.css" type="text/css" />
 
 
@@ -82,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -285,18 +287,26 @@ $(document).ready(function () {
 <p><img align="right" src="images/photos/profile_picture.jpeg" width = "450" HSPACE = "50"></p>
 <div id="welcome-to-my-internet-home" class="section level3">
 <h3>Welcome to my internet home</h3>
-<p>Call me <a href="bio.html">Garrett</a>. I am a Ph.D. candidate in the Department of Economics at the University of Oregon.</p>
+<p>My name is <a href="bio.html">Garrett Stanford</a>, and I currently
+work as a Postdoctoral Associate in the <a
+href="https://agecon.uga.edu/">Department of Agriculture and Applied
+Economics</a> at the University of Georgia. I completed my Ph.D. in
+economics at the University of Oregon in 2023, advised by Professors <a
+href="https://edrub.in/">Edward Rubin</a>, <a
+href="https://pages.uoregon.edu/cameron/vita/">Trudy Ann Cameron</a>,
+and <a href="https://sites.google.com/site/jonathanmvdavis/">Jonathan
+Davis</a>.</p>
 <p><br></p>
 </div>
 <div id="research" class="section level3">
 <h3>Research</h3>
-<p>I am an applied microeconomist who loves running experiments. My <a href="research.html">research</a> is motivated by social justice, particularly issues concerning the environment and policing. I believe that descriptive work is valuable. I believe we are having a replication crisis. And I believe the best research comes from inter-disciplinary collaboration.</p>
-<p>My <a href="papers/Stanford_2022_JMP.pdf">job market paper</a> uses a field experiment to examine the issue of discriminatory policing practices in the United States.</p>
+<p>I am a public economist who wears several hats. My <a
+href="research.html">research</a> focuses on environmental and criminal
+justice issues. I am particularly motivated by distributional impacts
+and questions concerning equity.</p>
 <p><br></p>
-</div>
-<div id="contact-me" class="section level3">
-<h3>Contact me</h3>
-<p>Please <a href="mailto:gos@uoregon.edu">get in touch</a> if you want to chat about research, offer me a job, or swap intel on high-quality low-traffic backpacking trails!</p>
+<p>Take a look around and please don’t hesitate to <a
+href="mailto:gos@uga.edu">contact me</a>.</p>
 </div>
 
 

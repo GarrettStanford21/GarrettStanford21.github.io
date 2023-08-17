@@ -13,7 +13,7 @@ navbar:
     href: teaching.html
   right: 
   - icon: fa-envelope fa-lg
-    href: mailto:gos@uoregon.edu
+    href: mailto:gos@uga.edu
   - icon: fa-github fa-lg
     href: https://github.com/GarrettStanford21
 output:

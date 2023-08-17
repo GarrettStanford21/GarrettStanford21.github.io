@@ -13,7 +13,8 @@
 
 <title>Teaching</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -58,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="website_style.css" type="text/css" />
 
 
@@ -82,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -283,17 +285,31 @@ $(document).ready(function () {
 </div>
 
 
-<p>I have worked as an educator in various capacities for the last ten years. Please see my <a href="teaching/Final%20Teaching%20Statement.pdf">teaching statement</a> for an overview of my teaching philosophy and experience as an educator.</p>
+<p>I have worked as an educator in various capacities for the last ten
+years. Please see my <a
+href="teaching/Final%20Teaching%20Statement.pdf">teaching statement</a>
+for an overview of my teaching philosophy and experience as an
+educator.</p>
 <p><br></p>
-<p>At the University of Oregon, I am a <strong>lead instructor</strong> for undergraduate courses on environmental economics and introductory microeconomics:</p>
+<p>At the University of Oregon, I am a <strong>lead instructor</strong>
+for undergraduate courses on environmental economics and introductory
+microeconomics:</p>
 <ul>
-<li><a href="teaching/201_syllabus.pdf">EC 201: Introduction to Microeconomics:</a></li>
-<li><a href="teaching/333_syllabus.pdf">EC 333: Natural Resources &amp; Environmental Issues:</a></li>
+<li><a href="teaching/201_syllabus.pdf">EC 201: Introduction to
+Microeconomics:</a></li>
+<li><a href="teaching/333_syllabus.pdf">EC 333: Natural Resources &amp;
+Environmental Issues:</a></li>
 </ul>
 <p><br></p>
-<p>I have served as a <strong>teaching assistant</strong> for a wide range of economics courses at both the graduate and undergraduate level. My roles have involved assisting honor students develop independent research projects and teaching <strong>R</strong> lab sessions for econometrics.</p>
+<p>I have served as a <strong>teaching assistant</strong> for a wide
+range of economics courses at both the graduate and undergraduate level.
+My roles have involved assisting honor students develop independent
+research projects and teaching <strong>R</strong> lab sessions for
+econometrics.</p>
 <ul>
-<li><a href="https://github.com/GarrettStanford21/421_Winter_2020/blob/master/README.md">EC 421: Introduction to Econometrics</a></li>
+<li><a
+href="https://github.com/GarrettStanford21/421_Winter_2020/blob/master/README.md">EC
+421: Introduction to Econometrics</a></li>
 </ul>
 <p><br></p>
 <div id="selected-student-evaluations" class="section level2">
@@ -301,24 +317,55 @@ $(document).ready(function () {
 <p>Full student evaluations are availble upon request.</p>
 <p><u><strong>As a lead instructor:</strong></u></p>
 <ul>
-<li><p>“Garrett you are an awesome guy and made the class a whole lot more fun. Favorite teacher I have had in the Econ department and you deserve recognition for that!”</p></li>
-<li><p>“Lectures were always very distinct and memorable, with no two lectures feeling too similar in topic. The way the assignments on canvas were posted always allowed for ample preparation in advance, and slides were always posted shortly after their corresponding lecture.”</p></li>
-<li><p>“I appreciate you, Garrett! Keep being you and being a great guy!”</p></li>
-<li><p>“Garrett answered all of my questions and he had an obvious, deep understanding of what he was talking about.”</p></li>
-<li><p>“None of the elements need improvement…overall great class”</p></li>
-<li><p>“Professor Stanford did a great job and made the lectures very engaging, especially for an online setting.”</p></li>
-<li><p>“I feel the instructor was very supportive and did not want any of his students to fail. He was very easy to talk to, and he made the course very entertaining while I still learned a lot.”</p></li>
-<li><p>“Garrett was awesome, deserves a raise or more praise. Definitely do something to reward that behavior.”</p></li>
+<li><p>“Garrett you are an awesome guy and made the class a whole lot
+more fun. Favorite teacher I have had in the Econ department and you
+deserve recognition for that!”</p></li>
+<li><p>“Lectures were always very distinct and memorable, with no two
+lectures feeling too similar in topic. The way the assignments on canvas
+were posted always allowed for ample preparation in advance, and slides
+were always posted shortly after their corresponding lecture.”</p></li>
+<li><p>“I appreciate you, Garrett! Keep being you and being a great
+guy!”</p></li>
+<li><p>“Garrett answered all of my questions and he had an obvious, deep
+understanding of what he was talking about.”</p></li>
+<li><p>“None of the elements need improvement…overall great
+class”</p></li>
+<li><p>“Professor Stanford did a great job and made the lectures very
+engaging, especially for an online setting.”</p></li>
+<li><p>“I feel the instructor was very supportive and did not want any
+of his students to fail. He was very easy to talk to, and he made the
+course very entertaining while I still learned a lot.”</p></li>
+<li><p>“Garrett was awesome, deserves a raise or more praise. Definitely
+do something to reward that behavior.”</p></li>
 </ul>
 <p><br></p>
 <p><u> <strong>As a teaching assistant:</strong></u></p>
 <ul>
-<li><p>“He was informative, patient, and explained concepts/examples in ways that were applicable and easy to understand.”</p></li>
-<li><p>“Garrett Stanford was a great discussion leader. Stanford was well versed, organized and engaging in regards to the material. Stanford was quick to respond to emails, held accessible and helpful office hours and was always willing to help and explain as much as possible.”</p></li>
-<li><p>“He was very good at making complicated economic concepts more accessible and easy to understand. He was also good at answering people’s questions.”</p></li>
-<li><p>“Garrett Stanford lead the discussion classes very well. Stanford encouraged our participation as well as explain all material thoroughly. The discussion material was helpful and prepared us for the tests well.”</p></li>
-<li><p>“Garrett has been an excellent discussion leader, for a few reasons. First of all, he teaches with a sense of humility that you can tell right of that bat. He’s there because he wants us to learn more, and that makes a massive difference towards the effectiveness of the discussion. Second, Garrett was always prepared to answer questions, and was able to pose these answers in a way we could all understand, making things simple while still keeping all the content. Overall, Garrett has been a personal favorite and has shown a capacity to be a strong leader and teacher.”</p></li>
-<li><p>“Stanford was great. He was obviously passionate and invested. I always enjoyed my time in discussion.”</p></li>
+<li><p>“He was informative, patient, and explained concepts/examples in
+ways that were applicable and easy to understand.”</p></li>
+<li><p>“Garrett Stanford was a great discussion leader. Stanford was
+well versed, organized and engaging in regards to the material. Stanford
+was quick to respond to emails, held accessible and helpful office hours
+and was always willing to help and explain as much as
+possible.”</p></li>
+<li><p>“He was very good at making complicated economic concepts more
+accessible and easy to understand. He was also good at answering
+people’s questions.”</p></li>
+<li><p>“Garrett Stanford lead the discussion classes very well. Stanford
+encouraged our participation as well as explain all material thoroughly.
+The discussion material was helpful and prepared us for the tests
+well.”</p></li>
+<li><p>“Garrett has been an excellent discussion leader, for a few
+reasons. First of all, he teaches with a sense of humility that you can
+tell right of that bat. He’s there because he wants us to learn more,
+and that makes a massive difference towards the effectiveness of the
+discussion. Second, Garrett was always prepared to answer questions, and
+was able to pose these answers in a way we could all understand, making
+things simple while still keeping all the content. Overall, Garrett has
+been a personal favorite and has shown a capacity to be a strong leader
+and teacher.”</p></li>
+<li><p>“Stanford was great. He was obviously passionate and invested. I
+always enjoyed my time in discussion.”</p></li>
 </ul>
 </div>
 
